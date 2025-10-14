@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { GifListItemComponent } from "./gif-list-item/gif-list-item.component";
+import { Gif } from '../../interfaces/gif.interface';
 
 interface imageUrls {
   url: string;
@@ -11,6 +12,6 @@ interface imageUrls {
 })
 export class GiftListComponent {
 
-  gifs = input.required<string[]>()
+  gifs = input.required<Gif[]>()
 
  }
